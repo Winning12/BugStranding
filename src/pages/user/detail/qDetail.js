@@ -65,7 +65,7 @@ export default class QDetail extends BaseComponent {
     
     redirectDocker=()=>{
         var win = window.open(
-            this.ip+"/dockerId/in?user="+this.loadStorage("user")+"&dockerId="+this.state.dockerId, '_blank');
+            this.ip+"/dockerId/in?user="+this.loadStorage("user")+"&dockerId="+this.state.question.dockerId, '_blank');
         win.focus()
     }
 
